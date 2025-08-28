@@ -64,18 +64,7 @@ def preprocess_comment(comment):
 
 
 
-def load_model(model_path, vectorizer_path):
-    """Load the trained model."""
-    try:
-        with open(model_path, 'rb') as file:
-            model = pickle.load(file)
-        
-        with open(vectorizer_path, 'rb') as file:
-            vectorizer = pickle.load(file)
 
-        return model, vectorizer
-    except Exception as e:
-        raise
 
 
 # Initialize the model and vectorizer
